@@ -34,7 +34,6 @@ class Enemy(pygame.sprite.Sprite):
         self.image = pygame.Surface((30, 30))
         self.image.fill(RED)
         self.rect = self.image.get_rect()
-        # Randomly position the enemy on the screen
         self.rect.x = random.randint(0, SCREEN_WIDTH - self.rect.width)
         self.rect.y = random.randint(0, SCREEN_HEIGHT - self.rect.height)
 all_sprites = pygame.sprite.Group()
